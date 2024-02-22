@@ -6,42 +6,14 @@
 <link rel="stylesheet" href="~/css/margin.css" />
 <h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.ServiceNumber)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ServiceIssueDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CustomerID)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.ServiceNumber)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ServiceIssueDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CustomerID)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ServicesId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ServicesId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ServicesId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<div class="row">
+    <div class="column">
+        <img src="img_snow.jpg" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="img_forest.jpg" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
+    </div>
+</div>
