@@ -10,3 +10,23 @@
     margin-right: auto ;
  
 }
+.h1 {
+    text-align:initial;
+    color:white;
+}
+body{
+    margin: 0px;
+}
+.content{
+    color:white;
+    text-align:left
+}
+
+.footer1{
+    position: absolute;
+    bottom:0;
+    width:100%;
+    white-space: nowrap;
+    line-height:-90px;
+
+}
