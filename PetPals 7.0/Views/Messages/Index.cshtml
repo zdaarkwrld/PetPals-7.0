@@ -3,41 +3,26 @@
 @{
     ViewData["Title"] = "Index";
 }
+<link rel="stylesheet" href="/css/StyleSheet.css" />
+<div class="text-center">
+    <h1 id="headingHome" class="display-4">Start Your Chat</h1>
+    <link href="~/css/stylesheet.css" rel="stylesheet" />
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <span>Name:</span><br />
+            <input type="text" id="txtUser" /><br />
+            <span class="message" style="color:white">Message: </span><br />
+            <textarea rows="10" cols="50" id="txtMsg"></textarea><br />
+            <button type="submit" class="btn btn-info" id="btnSend"> Send</button>
+        </div>
+        <div class="col-md-6">
+            <h3>Messages:</h3>
+            <ul id="list" class="alert alert-info"><</ul>
+        </div>
+    </div>
+</div>
 
-<link rel="stylesheet" href="~/css/margin.css" />
-
-<h1 style="margin-left: 20px; font-size:15px;">Index</h1>
-
-<p style="margin-left: 20px;">
-    <a asp-action="Create">Create New</a>
-</p>
-<table style="width: 70%; margin: auto;" class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.EmployeeId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CustomerId)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.EmployeeId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CustomerId)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.MessagesId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.MessagesId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.MessagesId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/lib/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/site.js"></script>
