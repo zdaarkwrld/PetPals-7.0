@@ -1,28 +1,36 @@
 ﻿body {
-    background-color: #0b0e13
+    background-image: url('../img/wp3484419.jpg');
+    width: 2114px;
+    height: 1000px;
+    display: grid;
 }
 .alert.alert-info {
     background-color: white;
-    height: 500px;
-    width: 800px;
+    height: 700px;
+    width: 1100px;
+    position: relative;
+    right: 100px;
+    margin-top:20px
 }
 
 .message {
     color: white;
-    font-family: Calibri
 }
 
 .col-md-6 {
     color: white;
-    font-family: Calibri
+
+
 }
 .display-4 {
     color: white;
 }
 
-#headingHome{
-    color:white;
-    font-family: Calibri
+#headingHome {
+    color: white;
+    margin-bottom: 50px;
+    font-weight: bold;
+    margin-top:30px
 }
 #homenav {
     color: #0b0e13;
@@ -31,3 +39,39 @@
 .navbar-nav {
     color: aqua;
 }
+
+#txtMsg {
+    height: 600px;
+    width: 750px;
+    position: relative;
+    right: 300px;
+}
+.btn btn-info {
+    position: relative;
+    right: 100px;
+    display:flex;
+    width:300px;
+}
+
+#txtUser2 {
+    position: relative;
+    right: 300px;
+    height:35px;
+}
+.msg {
+    position: relative;
+    left: 400px;
+}
+
+#btnSend {
+    display: grid;
+    width: 750px;
+    position:relative;
+    right:300px;
+    background-color:green;
+    
+}
+    #btnSend:hover {
+        background-color: limegreen !important;
+        color: #fff !important;
+    }

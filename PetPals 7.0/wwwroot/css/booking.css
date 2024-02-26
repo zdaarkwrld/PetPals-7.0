@@ -1,20 +1,19 @@
 ﻿
-
-
 * {
     margin: 0;
     padding: 0;
 }
 
 .main_bg {
-    
-    background-image: url('../img/background.jpg');
-    max-width: 1280px;
-    height: 800px;
+    background-image: url('../img/wp3484419.jpg');
+    width: 2100px;
+    height: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    position: relative;
+    right: 420px;
 }
 
 .form {
@@ -50,7 +49,7 @@
     .main-form div input {
         width: 100%;
         background: none;
-        border: 1px solid #ffca00;
+        border: 1px solid forestgreen;
         font-size: 20px;
         color: #fff;
         outline: none;
@@ -61,7 +60,7 @@
     .main-form div select {
         width: 104%;
         background: none;
-        border: 1px solid #ffca00;
+        border: 1px solid #4cff00;
         font-size: 20px;
         color: #fff;
         outline: none;
@@ -82,14 +81,14 @@
 
     #submit input {
         width: 200px;
-        background-color: yellow !important;
+        background-color: forestgreen !important;
         color: black !important;
         transition: all .3s;
     }
 
         #submit input:hover {
             width: 200px;
-            background-color: black !important;
+            background-color: limegreen !important;
             color: #fff !important;
         }
 

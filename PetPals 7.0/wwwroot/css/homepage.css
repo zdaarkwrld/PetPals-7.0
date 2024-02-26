@@ -1,4 +1,12 @@
-﻿.carousel-item{
+﻿body {
+    background-image: url('../img/wp3484419.jpg');
+    width: 2114px;
+    height: 1000px;
+    display: grid;
+    position: relative;
+    bottom:500px;
+}
+    .carousel-item{
     height: 720px;
     width: 1280px;
 }

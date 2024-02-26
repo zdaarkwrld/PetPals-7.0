@@ -3,21 +3,28 @@
 @{
     ViewData["Title"] = "Index";
 }
+<!DOCTYPE <html xmlns="http://www.w3.org/1999/xhtml">
+    
+</html>
 <link rel="stylesheet" href="/css/StyleSheet.css" />
-<div class="text-center">
-    <h1 id="headingHome" class="display-4">Start Your Chat</h1>
+<div style="font-family:Arial"class="text-center">
+    <h1 id="headingHome" class="display-4">START YOUR CHAT</h1>
     <link href="~/css/stylesheet.css" rel="stylesheet" />
+
+   
+
+</div>
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <span>Name:</span><br />
-            <input type="text" id="txtUser" /><br />
-            <span class="message" style="color:white">Message: </span><br />
-            <textarea rows="10" cols="50" id="txtMsg"></textarea><br />
+            <span style="font-size:30px;" class="username">Name:</span><br />
+            <input style="width: 750px;" type="text" placeholder="Input your name " id="txtUser2" /><br />
+            <span style="font-size:30px;"class="message" style="color:white">Message: </span><br />
+            <textarea placeholder="Input your message " rows="10" cols="50" id="txtMsg"></textarea><br />
             <button type="submit" class="btn btn-info" id="btnSend"> Send</button>
         </div>
         <div class="col-md-6">
-            <h3>Messages:</h3>
+            <h3  class="msg">Messages:</h3>
             <ul id="list" class="alert alert-info"><</ul>
         </div>
     </div>
