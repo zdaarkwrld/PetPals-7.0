@@ -1,10 +1,10 @@
 ﻿body {
-    background-image: url('../img/wp3484419.jpg');
+    
     width: 2114px;
     height: 1000px;
     display: grid;
     position: relative;
-    bottom:500px;
+ 
 }
     .carousel-item{
     height: 720px;
@@ -12,7 +12,7 @@
 }
 
 .header-image {
-    width: 55% !important;
+    width: 75% !important;
     display: block;
     margin-left: auto ;
     margin-right: auto ;
